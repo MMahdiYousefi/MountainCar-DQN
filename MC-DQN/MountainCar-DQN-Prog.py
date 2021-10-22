@@ -158,8 +158,8 @@ def main():
             model_time = (model_time_end - model_time_start) / 3600
             print(f'Total Model Runtime: {model_time:.1f} Hours ... ')
 
-        # Saving the model every 500th episode
-        if episode %500==0:
+        # Saving the model every 200th episode
+        if episode %200==0:
             fn = "MountainCar-DQN_BestModel.h5"
             print(f'Saving the model at "{fn}"')
             dqn_agent.save_model(fn)
